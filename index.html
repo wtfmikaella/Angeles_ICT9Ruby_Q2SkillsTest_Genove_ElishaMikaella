@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OBMC Enroll Now</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    .nav-link {
+  color: white !important;
+}
+    .bg-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("obbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: -1; 
+}   
+
+    .enroll {
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 900px;
+      max-height: 250px;
+      margin: 50px auto; 
+      padding: 30px;
+      border-radius: 13px;
+      opacity: 87%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      align-items: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      line-height: 1.6;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 17px;
+      position: relative;
+      right: -20px; 
+      top: -30px
+    }
+
+    .fname{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-bottom: 15px;
+        position: relative; 
+        right: 25px;
+        top: -20px;
+    }
+
+    .lname{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        position: relative;
+        right: -200px;
+        top: -88px;
+    }
+
+    .bday{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        position: relative;
+        right: -402px;
+        top: -179px;
+    }
+
+    .gender{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        position: relative;
+        right: -545px;
+        top: -267.9px;
+    }
+
+    .glselect{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        position: relative;
+        right: -655px;
+        top: -355px;
+    }
+
+    .bttn{
+        display: block;
+      margin: 1px auto 0;
+      padding: 2px 2px;
+      font-size: 6px;
+      border: none;
+      border-radius: 89px;
+      background: #79808c;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      top: -350px;
+      right: -290px;
+    }
+
+ .contact{ 
+    background-color: rgba(255, 255, 255, 0.9);
+      max-width: 900px;
+      max-height: 5000px;
+      margin: 50px auto; 
+      padding: 30px;
+      border-radius: 13px;
+      opacity: 87%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+ }
+    p{
+         line-height: 1.6;
+        font-size: 17px;
+        position: relative;
+        right: -20px;
+        top: -30px
+    }
+
+    h1{ 
+        margin-top: 0;
+    }
+
+  </style>
+</head>
+<body>
+<div class="bg-blur"></div>
+   <nav class="navbar navbar-expand-sm navbar-dark navbar bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="obmc.png" alt="logo" height="50px" width="50px" style="border-radius: 50%;">
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar- nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" target="_self">ENROLL NOW</a>
+                </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" label="Search">
+        <button class="btn btn-outline-light" type="submit">SEARCH</button>
+      </form>
+        </div>
+    </div>
+   </nav>
+
+    <div class="enroll">
+            <div class="col-md-6 container-bg">
+        <h1>Enroll Now</h1> 
+        <p>Student Information</p>      
+    <form>
+        <div class="fname">
+          <label>First Name</label>
+          <input type="text" placeholder="Jane" required />
+        </div>
+        <div class="lname">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe" required />
+        </div>
+        <br>
+        <div class="bday">
+          <label>Birth Date</label>
+          <input type="date" required />
+        </div>
+        <br>
+        <div class="gender">
+          <label>Gender</label>
+          <select required>
+            <option value="">Select...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <br>
+        <div class="glselect">
+          <label>Grade Level</label>
+          <select required>
+            <option value="">Select...</option>
+            <option>Grade 7</option>
+            <option>Grade 8</option>
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+            <option>Grade 11</option>
+            <option>Grade 12</option>
+          </select>
+        </div>
+        <div class="bttn">
+         <button type="submit" class="btn btn-send w-100">Submit</button>
+         </div>
+    </form>
+    </div>
+    </div>
+
+
+    <div class="contact">
+        <h1>Contact Information</h1>
+        <br>
+        <div class="email">
+          <label>Email Address</label>
+          <input type="email" placeholder="student@example.com" required />
+        </div>
+        <div class="cnumber">
+          <label>Contact Number</label>
+          <input type="tel" placeholder="0912-345-6789" required />
+        </div>
+        <h3>Other information</h3>
+        <br>
+        <label>Mode of Learning</label>
+      <div class="radio-group">
+        <label><input type="radio" name="mode" required /> Online</label>
+        <label><input type="radio" name="mode" /> Face-to-Face</label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" required /> I confirm that the information provided is true and complete.
+        </label>
+      </div>
+
+      <button type="submit">Submit Enrollment</button>
+
+    </div>
+
+</body>
+</html>
